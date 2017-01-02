@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+            <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  </head>
+  <body>
+      <div class="container">
+    <h1 class="jumbotron text-center">API: Timestamp Microservice</h1>
+    <h3>By Marius Kildedal</h3>
+    <blockquote>User Stories:
+        <ol>
+            <li>I can pass a string as a parameter, and it will check to see whether that string contains either a unix
+                timestamp or a natural language date (example: January 1, 2016)
+            </li>
+            <li>If it does, it returns both the Unix timestamp and the natural language form of that date.</li>
+            <li>If it does not contain a date or Unix timestamp, it returns <code>null</code> for those properties.</li>
+        </ol>
+    </blockquote>
+    <h2>Example usage:</h2>
+    <code>https://freecodecamp-drivez.c9users.io/December%2015,%202015</code><br>
+    <code>https://freecodecamp-drivez.c9users.io/1450137600</code>
+    <h2>Example output:</h2>
+    <code>{ "unix": 1450137600, "natural": "December 15, 2015" }</code><br>
+    <code>{ "unix": null, "natural": null }</code>
+</div>
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+  </body>
+</html>
